@@ -79,6 +79,9 @@
     .p1 .navigation{
         display: none;
     }
+    form .content div{
+        font-size: 1.65rem;
+    }
 }
 html{
     font-size: 10px;
