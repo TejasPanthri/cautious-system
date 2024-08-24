@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tax</title>
+    <link rel="stylesheet" href="incometax.css">
+    <script src="incometax.js"></script>
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+
+<body>
+    <div class="navbar">
+        <i class="ri-menu-2-line"></i>
+        <img src="img/logo.png" alt="logo" id="logo">
+        
+    </div>
+    <div class="p1">
+        <div class="navigation">
+            <div class="textmenu">
+                <ul>
+                    <li>
+                        <a href="index.html">Overview</a>
+                        <a href="">Income Tax</a>
+                        <a href="">Capital Gain Tax</a>
+                        <a href="">Othes</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="mainscreen">
+            <div class="headingbox">
+                <h2>
+                    Calculations made simple
+                </h2>
+                <h1>
+                    Income <span>Tax Calculator</span>
+                </h1>
+            </div>
+            <div class="taxbox">
+                <div class="form">
+                    <form action="javascript:void(0);">
+
+                        <button class="btn">
+                            <h3>Gross Income</h3>
+                            <h3 id="plus">+</h3>
+                        </button>
+                        <div class="content">
+                            <!-- Dropdown items -->
+                            <div>
+                                Age Category
+                                <select name="drop-down" id="ageselector">
+                                    <option value="a">Below 60</option>
+                                    <option value="b">60 to 80</option>
+                                    <option value="c">80 and above</option>
+                                </select>
+                            </div>
+                            <div>
+                                Gross Salary Income
+                                <input type="number" name="" id="">
+                            </div>
+                            <div>
+                                Rental Income
+                                <input type="number" name="" id="">
+                            </div>
+                            <div>
+                                Income From Interest
+                                <input type="number" name="" id="">
+                            </div>
+                            <div>
+                                Exempt Allowances
+                                <input type="number" name="" id="">
+                            </div>
+                            <div>
+                                Income From Other Sources
+                                <input type="number" name="" id="">
+                            </div>
+                        </div>
+
+                        <button class="btn">
+                            <h3>Deductions</h3>
+                            <h3 id="plus">+</h3>
+                        </button>
+                        <div class="content">
+                            <div>
+                                Basic Deductions - 80C
+                                <input type="number" name="" id="">
+                            </div>
+                            <div>
+                                Medical Insurance - 80D
+                                <input type="number" name="" id="">
+                            </div>
+                            <div>
+                                Interest on Home Loan- Self occupied
+                                <input type="number" name="" id="">
+                            </div>
+                            <div>
+                                Interest on Home Loan- Let Out
+                                <input type="number" name="" id="">
+                            </div>
+                            <div>
+                                Interest on Educational Loan - 80E
+                                <input type="number" name="" id="">
+                            </div>
+
+                            <div>
+                                other
+                                <input type="number" name="" id="">
+                            </div>
+                            <div>
+                                Contribution to NPS u/s 80CCD(1B)
+                                <input type="number" name="" id="">
+                            </div>
+                            <div>
+                                Donation to charity u/s 80G
+                                <input type="number" name="" id="">
+                            </div>
+                        </div>
+
+                    </form>
+                    
+                </div>
+                <div class="finaltax">
+                    <div class="finaltaxbox">
+                        <div class="result">
+                            <h2>Estimated Yearly Tax</h2>
+                            <h1>$21,784</h1>
+                        </div>
+                        <div class="calculations">
+                            <div>
+                                <h3 class="bmm">Total Gross Income</h3>
+                                <h3 class="amm">$200000</h3>
+                                <h3 class="amm">---</h3>
+                                
+                            </div>
+                            <div>
+                                <h3 class="bmm">Total Deductions</h3>
+                                <h3 class="ammb">-$54,769</h3>
+                                <h3 class="ammb">24%</h3>
+                            </div>
+                            <div>
+                                <h3 class="bmm">Net Taxable Ammount</h3>
+                                <h3 class="amm">$1,45,231</h3>
+                                <h3 class="amm">40%</h3>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="calculatebutton">
+                        <button>Calculate</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+

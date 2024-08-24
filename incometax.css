@@ -1,0 +1,374 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&family=Signika:wght@300..700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* 147.9rem
+66.7rem */
+
+@media only screen and (max-width: 960px) {
+    .mainscreen .taxbox{
+        flex-direction: column;
+    }
+
+    .taxbox .form{
+        padding: 0px;
+        width: calc(100% - 5rem);
+        height: auto;
+        padding: 2rem;
+        }
+    .taxbox .finaltax{
+        flex-direction: column-reverse;
+        width: 100%;
+
+    }
+    .finaltax .finaltaxbox{
+        
+        width: 100%;
+    }
+
+}
+ 
+@media only screen and (max-width: 480px){
+    html:root {
+        font-size: 55%;
+    }
+    body .mainscreen{
+        
+        width: 100%;
+    }
+    .headingbox h2{
+        width: 241px;
+        text-align: left;
+    }
+    .mainscreen .headingbox{
+        /* background-color: crimson; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .mainscreen .taxbox{
+        width: 100%;
+        height: 40%;
+    }
+    .taxbox .finaltax{
+        display: flex;
+        align-items: center;
+    }
+    .finaltax .calculatebutton{
+        margin-top: 4rem;
+        width: 40%;
+        height: 6.2rem;
+        margin-bottom: 6rem;
+    }
+    .navbar .ri-menu-2-line{
+        display: block;
+        font-size: 3rem;
+        margin-left: 2rem;
+    }
+    body .navbar{
+        width: 100%;
+    }
+    .navbar #logo{
+        margin-right: 0.8rem;
+    
+    }
+    .p1 .navigation{
+        display: none;
+    }
+}
+html{
+    font-size: 10px;
+}
+body{
+    
+    background-color: #F7F8FA;
+}
+.navbar{
+    width: 100%;
+    height: 70px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.088) 0px 4px 12px;
+    position: relative;
+}
+
+#logo{
+    position: absolute;
+    right: 0em;
+    margin-top: 1rem;
+    margin-right: 9.8rem;
+    width: 18rem;
+}
+
+nav{
+    width: 100%;
+    height: 100%;
+    background-color: #f8f8f8;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.navbar i{
+    position: relative;
+    font-size: 2rem;
+    font-weight: 800;
+    display: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 99px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 18px;
+    font-family: "Roboto Mono";
+}
+
+.p1{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0%;
+    display: flex;
+    flex-direction: row;
+}
+
+.navigation{
+    position: relative;
+    width: 24.7%;
+    height: 100%;
+    display: flex;
+    /* background-color: #252525; */
+}
+
+.textmenu{
+    width: 19.1rem;
+    height: 15.1rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 12.8rem;
+    margin-left: 23.2%;
+    justify-content: center;
+}
+
+.textmenu ul li{
+    display: flex;
+    flex-direction: column;
+}
+
+.textmenu ul li a{
+    text-decoration: none;
+    font-size: 1.8rem;
+    color: #454545;
+    margin: 0.5rem;
+}
+
+.mainscreen{
+    width: 75.3%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* background-color: #252525; */
+}
+
+.headingbox{
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    height: 10.2rem;
+    /* background-color: #3357E5; */
+}
+
+.headingbox h2{
+    margin-top: 2.7rem;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    color: #797979;
+    margin-bottom: 0.2rem;
+    font-size: 1.4rem;
+}
+
+.headingbox h1{
+    font-size: 2.8rem;
+    color: #252525;
+    font-family: "Ubuntu", sans-serif;
+}
+.headingbox h1 span{
+    font-size: 2.8rem;
+    color: #3357E5;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.taxbox{
+    width: calc(100% - 9.8rem);
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+    /* background-color: #3357E5; */
+}
+
+.form{
+    width: 65%;
+    margin-right: 4%;
+    padding: 3rem;
+    border: 1px solid rgba(0, 0, 0, 0.073);
+}
+
+
+
+.btn{
+    background-color: #F7F8FA;
+    cursor: pointer;
+    border: none;
+    font-size: 1.2rem;
+    width: 100%;
+    font-family: "Ubuntu", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 6rem;
+    font-weight: 400;
+    font-style: normal;
+    color: #252525;
+    border-bottom: 1px solid #ddd;
+}
+
+#plus{
+    font-size: 2.2rem;
+}
+
+.content div{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.55rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #252525;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.content {
+    display: none;
+    position: relative;
+    background-color: #F7F8FA;
+    min-width: 92%;
+    padding: 1rem;
+    
+}
+
+.content-clicked{
+    display: block;
+}
+
+form h3{
+    font-size: 1.8rem;
+    margin: 2rem 0rem 2rem 0rem;
+}
+
+.finaltax{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.calculatebutton{
+    width: 100%;
+    height: 5rem;
+
+    box-shadow: rgba(57, 87, 229, 0.4) 0px 5px, rgba(57, 87, 229, 0.3) 0px 10px, rgba(57, 87, 229, 0.2) 0px 15px, rgba(57, 87, 229, 0.1) 0px 20px, rgba(57, 87, 229, 0.05) 0px 25px;
+    border-radius: 8px;
+}
+.calculatebutton button{
+    width: 100%;
+    height: 100%;
+    background-color: #3357E5;
+    font-size: 1.6rem;
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+    color: white;
+    border-radius: 8px;
+}
+.finaltaxbox{
+    width: 100%;
+    height: 26.8rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.073);
+    box-shadow: rgba(0, 0, 0, 0.1)0px 4px 12px;
+}
+
+.calculations{
+    width: 100%;
+    height: 40%;
+    /* padding: 4%; */
+}
+
+.calculations div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bmm, .amm, .ammb{
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1.3rem;
+    font-size: 1.35rem;
+    font-family: "Signika", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+    "GRAD" 0;
+    color: #797979;
+}
+
+.ammb{
+    font-family: "Signika", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-variation-settings:
+    "GRAD" 0;
+}
+
+.result{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: #252525; */
+    
+}
+
+.result h2{
+    margin-top: 8%;
+    margin-bottom: 1%;
+    font-size: 1.4rem;
+    font-family: "Ubuntu", sans-serif;
+    color: #838BA0;
+    font-weight: 500;
+}
+
+.result h1{
+    font-size: 4rem;
+    font-family: "Bungee Tint", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
