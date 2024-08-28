@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tax</title>
+    <link rel="stylesheet" href="incometax.css">
+    <script src="incometax.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="navbar">
+
+        <i class="ri-menu-2-line" id="menu"></i>
+        <img src="img/logo.png" alt="logo" id="logo">
+        <a href="https://www.incometax.gov.in/iec/foportal/" id="globalcover"><i class="ri-global-fill" id="global"></i></a>
+    </div>
+    <div class="p1">
+        <div class="navigation">
+            <div class="navborderoverlay">
+                <div class="textmenu">
+                    <ul id="navul">
+                        <li>
+                            <a href="index.html" id="one">Home</a>
+                            <a href="" id="two">Income Tax</a>
+                            <a href="blogs.html" id="three">Blogs</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- <img src="img/2.png" alt=""> -->
+            </div>
+        </div>
+
+            <div class="mainscreen">
+                <div class="headingbox">
+                    <h2>
+                        Calculations made simple
+                    </h2>
+                    <h1>
+                        Income <span>Tax Calculator</span>
+                    </h1>
+                    <h3>
+                        *Enter your annual gross income, allowances and a few details about your investments below to
+                        calulate your <span>Annual Tax</span>
+                    </h3>
+                </div>
+                <div class="taxbox">
+                    <div class="form">
+                        <form action="javascript:void(0);">
+
+                            <button class="btn">
+                                <h3>Gross Income</h3>
+                                <h3 id="plus">+</h3>
+                            </button>
+                            <div class="content">
+                                <!-- Dropdown items -->
+                                <div>
+                                    Age Category
+                                    <select name="drop-down" id="ageselector">
+                                        <option value="a">Below 60</option>
+                                        <option value="b">60 to 80</option>
+                                        <option value="c">80 and above</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    Gross Salary Income
+                                    <input type="number" id="salary">
+                                </div>
+                                <div>
+                                    Rental Income
+                                    <input type="number" id="rental-inocme">
+                                </div>
+                                <div>
+                                    Total Income From Interest
+                                    <input type="number" id="interest-inocme">
+                                </div>
+                                <div>
+                                    Exempt Allowances
+                                    <input type="number" id="exempt-allowances">
+                                </div>
+                                <div>
+                                    Income From Other Sources
+                                    <input type="number" id="other-inocme">
+                                </div>
+                            </div>
+
+                            <button class="btn">
+                                <h3>Deductions</h3>
+                                <h3 id="plus">+</h3>
+                            </button>
+                            <div class="content">
+                                <div>
+                                    Basic Deductions - 80C
+                                    <input type="number" name="" id="basicdeductions">
+                                </div>
+                                <div>
+                                    Medical Insurance - 80D
+                                    <input type="number" name="" id="medicalinsurance">
+                                </div>
+                                <div>
+                                    Principle on Home Loan- Self occupied
+                                    <input type="number" name="" id="homeloan">
+                                </div>
+                                <div>
+                                    Interest on Educational Loan - 80E
+                                    <input type="number" name="" id="educationloan">
+                                </div>
+
+                                <div>
+                                    Savings Bank Interest - 80 TTA
+                                    <input type="number" name="" id="savingsbankinterest">
+                                </div>
+                                <div>
+                                    Contribution to NPS u/s 80CCD(1B)
+                                    <input type="number" name="" id="NPS">
+                                </div>
+                                <div>
+                                    Donation to charity u/s 80G
+                                    <input type="number" name="" id="charity">
+                                </div>
+                            </div>
+
+                        </form>
+
+                    </div>
+                    <div class="finaltax">
+                        <div class="finaltaxbox">
+                            <div class="result">
+                                <h2>Estimated Yearly Tax(Acc to old tax regime)</h2>
+                                <h1 id="tax-to-pay">₹0.00</h1>
+                            </div>
+                            <div class="calculations">
+                                <div>
+                                    <h3 class="amm">Total Gross Income</h3>
+                                    <h3 class="bmm" id="bm1">₹----</h3>
+                                    <h3 class="cmm" id="cm1">-</h3>
+
+                                </div>
+                                <div>
+                                    <h3 class="amm">Total Deductions</h3>
+                                    <h3 class="bmm" id="bm2">₹----</h3>
+                                    <h3 class="cmm" id="cm2">-</h3>
+                                </div>
+                                <div>
+                                    <h3 class="amm">Net Taxable Ammount</h3>
+                                    <h3 class="bmm" id="bm3">₹----</h3>
+                                    <h3 class="cmm" id="cm3">-</h3>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="calculatebutton">
+                            <button id="calcbtn">Calculate</button>
+                        </div>
+                        <div class="conclusion">
+                            <h1>Summary</h1>
+                            <h2 class="summary">Fill in your details to get summary</h2>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="p2">
+
+    </div>
+</body>
